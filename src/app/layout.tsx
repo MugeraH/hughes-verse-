@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Starter Template",
-    default: "Starter Template",
+    template: "%s | Hughes Mugera",
+    default: "Hughes Mugera",
   },
-  description:
-    "Small cool things I  have had the pleasure of getting to build.",
+  description: "Welcome to the Hughesverse 👨‍🚀",
   metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
 };
 
@@ -21,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
