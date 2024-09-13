@@ -7,7 +7,7 @@ function Intro() {
     <section className="border-b-[0.2px] border-opacity-30 rounded border-gray-500  w-full pb-10 gap-10 ">
       <div className="flex flex-col gap-6 md:flex-row justify-between w-full items-center">
         <div className="flex items-center gap-4">
-          <div className="rounded-full overflow-hidden h-20 w-20">
+          <div className="rounded-full overflow-hidden h-20 w-20 bg-gray-500">
             <Image
               src="/img/me.jpg"
               width={80}
