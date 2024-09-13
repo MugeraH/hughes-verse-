@@ -5,7 +5,7 @@ import Image from "next/image";
 function Intro() {
   return (
     <section className="border-b-[0.2px] border-opacity-30 rounded border-gray-500  w-full pb-10 gap-10 ">
-      <div className="flex flex-col gap-6 md:flex-row justify-between w-full items-center">
+      <div className="flex flex-col gap-6 md:flex-row justify-between w-full md:items-center">
         <div className="flex items-center gap-4">
           <div className="rounded-full overflow-hidden h-20 w-20 bg-gray-500">
             <Image
@@ -52,8 +52,8 @@ function Intro() {
         </div>
       </div>
 
-      <p className=" mt-6 ml-2 text-xs font-medium ">
-        Am Open for work and collaborating reach me @ mugerahughes@gmail.com
+      <p className=" mt-6 md:ml-2 text-xs font-medium ">
+        Reach me @ mugerahughes@gmail.com 
       </p>
     </section>
   );
