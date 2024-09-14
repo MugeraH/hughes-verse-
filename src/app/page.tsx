@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Container from "@/components/Container";
 import Intro from "@/components/Intro";
 import PostionsHeld from "@/components/PostionsHeld";
+import Projects from "@/components/Projects";
 import Stack from "@/components/Stack";
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
         <About />
         <Stack />
         <PostionsHeld />
+
+        <Projects/>
       </Container>
     </div>
   );

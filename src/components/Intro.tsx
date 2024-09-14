@@ -43,9 +43,10 @@ function Intro() {
             <Github size={22} />
           </Link>
           <Link
-            rel="noopener"
+        
             href="https://www.linkedin.com/in/hughes-mugera/"
             target="_blank"
+            rel="noopener"
           >
             <Linkedin size={22} />
           </Link>
@@ -53,7 +54,7 @@ function Intro() {
       </div>
 
       <p className=" mt-6 md:ml-2 text-xs font-medium ">
-        Reach me @ mugerahughes@gmail.com 
+        Reach me @ mugerahughes@gmail.com
       </p>
     </section>
   );
