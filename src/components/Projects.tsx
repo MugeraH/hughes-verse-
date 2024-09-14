@@ -59,7 +59,7 @@ function Projects({}: Props) {
     <section className="border-b-[0.2px] border-opacity-30 rounded border-gray-500 py-7">
       <h2 className="text-sm text-semibold"> Repositories</h2>
 
-      <div className=" mt-4 grid grid-cols-2 gap-4 ">
+      <div className=" mt-4 grid   md:grid-cols-2 gap-4 ">
         <ProjectCard
           projectLink="https://github.com/MugeraH/Coolplaces-api"
           projectName="Coolplaces-api"
@@ -81,14 +81,14 @@ function Projects({}: Props) {
           language=".Net"
           languageIcon="/img/net.png"
         />
-          <ProjectCard
+        <ProjectCard
           projectLink="https://github.com/MugeraH/Coolplaces-api"
           projectName="Coolplaces-api"
           description="Sample api with JWT Authentication"
           language=".Net"
           languageIcon="/img/net.png"
         />
-          <ProjectCard
+        <ProjectCard
           projectLink="https://github.com/MugeraH/Coolplaces-api"
           projectName="Coolplaces-api"
           description="Sample api with JWT Authentication"
