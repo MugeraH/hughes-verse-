@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 type Props = {};
 
 const PositionCard = ({
@@ -41,8 +41,15 @@ const PositionCard = ({
 
 function PostionsHeld({}: Props) {
   return (
-    <section className="border-b-[0.2px] w- border-opacity-30 rounded border-gray-500 py-7">
-      <p className="text-sm mb-3">Positions</p>
+    <motion.section
+      key="position"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+      className=""
+    >
+      {/* <p className="text-sm mb-3">Positions</p> */}
 
       <div className="flex flex-col gap-8">
         <PositionCard
@@ -67,7 +74,7 @@ function PostionsHeld({}: Props) {
           description="ries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lor"
         />
       </div>
-    </section>
+    </motion.section>
   );
 }
 

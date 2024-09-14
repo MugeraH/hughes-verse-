@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import { motion } from "framer-motion";
 type Props = {};
 
 const StackBtn = ({
@@ -28,8 +28,15 @@ const stackList = [{ lable: "HTML", icon: "/img/html.png" }];
 
 function Stack({}: Props) {
   return (
-    <section className="border-b-[0.2px] w- border-opacity-30 rounded border-gray-500 py-7">
-      <p className="text-sm mb-3">Tech Stack</p>
+    <motion.section
+      key="stack"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className=""
+    >
+      {/* <p className="text-sm mb-3">Tech Stack</p> */}
 
       <div className="flex flex-row gap-2">
         <StackBtn label="HTML" width="32" icon="/img/html.png" />{" "}
@@ -39,10 +46,10 @@ function Stack({}: Props) {
         <StackBtn label="React" width="32" icon="/img/react.png" />{" "}
         <StackBtn label="Next" width="32" icon="/img/next.svg" />
         <StackBtn label="Angular" width="32" icon="/img/angular.png" />{" "}
-        <StackBtn label="Webpack" width="32" icon="/img/webpack.png" />
       </div>
 
       <div className=" mt-3 flex flex-row gap-2">
+        <StackBtn label="Webpack" width="32" icon="/img/webpack.png" />
         <StackBtn label="Material UI" width="32" icon="/img/mui.png" />{" "}
         <StackBtn label="Tailwind" width="32" icon="/img/tailwind.png" />{" "}
       </div>
@@ -63,7 +70,7 @@ function Stack({}: Props) {
       <div className="mt-5 flex flex-row gap-2">
         <StackBtn label="Git" width="32" icon="/img/git.png" />{" "}
       </div>
-    </section>
+    </motion.section>
   );
 }
 
