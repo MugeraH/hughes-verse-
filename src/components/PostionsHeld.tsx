@@ -46,7 +46,7 @@ function PostionsHeld({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-          transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5 }}
       className=""
     >
       {/* <p className="text-sm mb-3">Positions</p> */}
@@ -62,14 +62,14 @@ function PostionsHeld({}: Props) {
         <PositionCard
           logo="/img/moringa.jpeg"
           jobTitle="Software Developer $ Instructor"
-          company="Kenya Airways"
+          company="Moringa School"
           duration="2022 - Present"
           description="ries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lor"
         />{" "}
         <PositionCard
           logo="/img/touch.jpeg"
           jobTitle=" Frontend Software Developer"
-          company="Kenya Airways"
+          company="Touch Inspiration Ltd"
           duration="2022 - Present"
           description="ries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lor"
         />

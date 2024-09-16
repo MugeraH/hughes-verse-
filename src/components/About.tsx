@@ -1,10 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 type Props = {};
 
 function About({}: Props) {
   return (
-    <section className="border-b-[0.2px] border-opacity-30 rounded border-gray-500 py-7">
+    <motion.section
+      key="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="border-b-[0.2px] border-opacity-30 rounded border-gray-500 py-7"
+    >
       <h2 className="text-sm text-semibold"> About</h2>
 
       <p className="text-sm mt-3">
@@ -23,7 +31,7 @@ function About({}: Props) {
         functional interfaces that easily integrate with backend applications,
         following best practices and ensuring optimal application performance. `}
       </p>
-    </section>
+    </motion.section>
   );
 }
 

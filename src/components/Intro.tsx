@@ -2,9 +2,17 @@ import React from "react";
 import { Github, Linkedin, Youtube, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 function Intro() {
   return (
-    <section className="border-b-[0.2px] border-opacity-30 rounded border-gray-500  w-full pb-10 gap-10 ">
+    <motion.section
+      key="intro"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="border-b-[0.2px] border-opacity-30 rounded border-gray-500  w-full pb-10 gap-10 "
+    >
       <div className="flex flex-col gap-6 md:flex-row justify-between w-full md:items-center">
         <div className="flex items-center gap-4">
           <div className="rounded-full overflow-hidden h-20 w-20 bg-gray-500">
@@ -43,7 +51,6 @@ function Intro() {
             <Github size={22} />
           </Link>
           <Link
-        
             href="https://www.linkedin.com/in/hughes-mugera/"
             target="_blank"
             rel="noopener"
@@ -56,7 +63,7 @@ function Intro() {
       <p className=" mt-6 md:ml-2 text-xs font-medium ">
         Reach me @ mugerahughes@gmail.com
       </p>
-    </section>
+    </motion.section>
   );
 }
 
