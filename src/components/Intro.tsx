@@ -15,7 +15,7 @@ function Intro() {
     >
       <div className="flex flex-col gap-6 md:flex-row justify-between w-full md:items-center">
         <div className="flex items-center gap-4">
-          <div className="rounded-full overflow-hidden h-20 w-20 bg-gray-500">
+          {/* <span className="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full animate-buttonheartbeat hover:cursor-pointer">
             <Image
               src="/img/me.jpg"
               width={80}
@@ -23,6 +23,20 @@ function Intro() {
               objectFit="contain"
               alt="logo"
             />
+          </span> */}
+
+          <div className="relative rounded-full overflow-hidden h-[5.5rem] w-[5.5rem]  flex justify-center items-center">
+            {/* <span className="animate-buttonheartbeat absolute inline-flex h-full w-full rounded-full  opacity-75"></span> */}
+            <div className=" rounded-full overflow-hidden h-16 w-16  z-10 relative ">
+              {" "}
+              <Image
+                src="/img/me.jpg"
+                width={70}
+                height={70}
+                objectFit="cover"
+                alt="logo"
+              />
+            </div>
           </div>
           <div>
             <h3 className="text-1xl font-bold">Hughes Mugera</h3>

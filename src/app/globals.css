@@ -39,3 +39,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   border: 3px solid #cb3333;
 }
+
+.animate-buttonheartbeat {
+  animation: buttonheartbeat 2s ease-in-out infinite;
+}
