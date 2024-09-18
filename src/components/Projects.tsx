@@ -96,14 +96,6 @@ function Projects({}: Props) {
           deployedLink="https://weather-hero.vercel.app/"
           languageIcon="/img/react.png"
         />
-        {/* <ProjectCard
-          projectLink="https://github.com/MugeraH/Coolplaces-api"
-          projectName="Coolplaces-api"
-          description="Sample api with JWT Authentication"
-          language=".Net"
-          deployed={false}
-          languageIcon="/img/net.png"
-        />
         <ProjectCard
           projectLink="https://github.com/MugeraH/Coolplaces-api"
           projectName="Coolplaces-api"
@@ -119,7 +111,15 @@ function Projects({}: Props) {
           language=".Net"
           deployed={false}
           languageIcon="/img/net.png"
-        /> */}
+        />
+        <ProjectCard
+          projectLink="https://github.com/MugeraH/Coolplaces-api"
+          projectName="Coolplaces-api"
+          description="Sample api with JWT Authentication"
+          language=".Net"
+          deployed={false}
+          languageIcon="/img/net.png"
+        />
 
         <div className="cursor-pointer text-blue-200 text-sm flex justify-start items-end">
           <Link

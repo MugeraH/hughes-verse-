@@ -14,7 +14,13 @@ import Tabs from "@/components/tabs";
 export default function Home() {
   let [activeTab, setActiveTab] = React.useState("stack");
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div
+      className="h-full  min-h-screen  text-white
+    
+    bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(44,44,198,0.3),rgba(255,255,255,0))]
+    
+    "
+    >
       <Container>
         <AnimatePresence>
           <Intro />
