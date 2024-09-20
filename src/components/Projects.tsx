@@ -97,12 +97,13 @@ function Projects({}: Props) {
           languageIcon="/img/react.png"
         />
         <ProjectCard
-          projectLink="https://github.com/MugeraH/Coolplaces-api"
-          projectName="Coolplaces-api"
-          description="Sample api with JWT Authentication"
-          language=".Net"
+          projectLink="https://github.com/MugeraH/Github-search"
+          deployedLink="https://github-search-v1.vercel.app/home"
+          projectName="Gitsearch"
+          description="Search github users or repositories"
+          language=".Angular"
           deployed={false}
-          languageIcon="/img/net.png"
+          languageIcon="/img/angular.png"
         />
         <ProjectCard
           projectLink="https://github.com/MugeraH/Coolplaces-api"
