@@ -74,7 +74,7 @@ function Intro() {
           </div> */}
 
           <div className="group relative">
-            <div className="transistion rounded-full absolute -inset-0  bg-blue-300 opacity-75 blur duration-1000 animate-pulse"></div>
+            {/* <div className="transistion rounded-full absolute -inset-0  bg-blue-300 opacity-75 blur duration-1000 animate-pulse"></div> */}
 
             <div className="bg- tems-center relative flex  rounded-full bg-black  leading-none">
               <span className="flex items-center ">

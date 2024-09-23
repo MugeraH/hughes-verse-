@@ -19,7 +19,7 @@ const StackBtn = ({
       <div className="h-4 w-4 overflow-hidden ">
         <Image src={icon} width={20} height={7} alt="js" className=" " />
       </div>{" "}
-      <span className="hidden md:block text-sm"> {label}</span>
+      <span className="hidden md:block text-xs cursor-default"> {label}</span>
     </div>
   );
 };
@@ -30,10 +30,11 @@ function Stack({}: Props) {
   return (
     <motion.section
       key="stack"
+      layout
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
       className=""
     >
       {/* <p className="text-sm mb-3">Tech Stack</p> */}

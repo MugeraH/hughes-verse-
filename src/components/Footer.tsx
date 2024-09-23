@@ -10,7 +10,7 @@ function Footer({}: Props) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className=" py-4 text-[12px] text-center"
+      className=" py-4 text-[12px] text-center text-slate-500"
     >
       {`HM@${new Date().getFullYear()}`}
     </motion.section>
