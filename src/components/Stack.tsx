@@ -14,10 +14,10 @@ const StackBtn = ({
 }) => {
   return (
     <div
-      className={` flex items-center  gap-2 bg-gray-800 py-1.5 px-3 rounded`}
+      className={` flex items-center  gap-2 bg-gray-800 hover:bg-gray-700 transition-all delay-50 py-2 px-3 rounded`}
     >
-      <div className="h-4 w-4 overflow-hidden ">
-        <Image src={icon} width={20} height={7} alt="js" className=" " />
+      <div className="h-6 w-6 overflow-hidden ">
+        <Image src={icon} width={25} height={7} alt="js" className=" " />
       </div>{" "}
       <span className="hidden md:block text-xs cursor-default"> {label}</span>
     </div>

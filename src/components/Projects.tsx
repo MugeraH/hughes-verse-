@@ -93,7 +93,7 @@ const ProjectCard = ({
     <div className="flex flex-col gap-3 bg-gray-950 p-2 md:p-5 rounded">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="h-6 w-5 overflow-hidden ">
+          <div className="h-5 w-5 overflow-hidden ">
             <Image
               src="/img/repoicon.png"
               width={16}

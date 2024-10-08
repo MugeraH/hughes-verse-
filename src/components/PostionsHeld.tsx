@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Dot } from "lucide-react";
 type Props = {};
 
 const PositionCard = ({
@@ -17,21 +18,21 @@ const PositionCard = ({
   description: string;
 }) => {
   return (
-    <div className="flex gap-5 items-start">
-      <div className="h-[50px] w-[120px]  ">
+    <div className="grid grid-cols-[90px,_1fr] gap-3 items-start">
+      <div className="flex h-[70px] w-[70px] hover:animate-pulse rounded-sm overflow-hidden">
         <Image
           src={logo}
-          width={105}
-          height={80}
-          objectFit="contain"
+          width={70}
+          height={70}
+          objectFit="cover"
           alt={company}
-          className=" "
+          className=""
         />
       </div>{" "}
       <div className="flex flex-col gap-2">
         <p className="block font-bold text-1xl">{jobTitle}</p>
-        <span className="block text-sm font-semibold">
-          {company} .{duration}
+        <span className=" text-sm font-semibold flex items-center ">
+          {company} <Dot /> {duration}
         </span>
         <p className="block text-sm">{description}</p>
       </div>
@@ -55,24 +56,25 @@ function PostionsHeld({}: Props) {
       <div className="flex flex-col gap-8">
         <PositionCard
           logo="/img/kq_logo.jpeg"
-          jobTitle="Software Developer"
+          jobTitle="Senior Software Developer(Frontend)"
           company="Kenya Airways"
-          duration="2022 - Present"
-          description="ries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lor"
+          duration="July 2022 - Present"
+          description={`Spearheaded a significant architectural shift from monolithic to decoupled systems  for internal appplications, dramatically improving deployment times and development efficiency. I led an Agile team of five developers, fostering cross-functional collaboration and delivering high-performance web applications that substantially boosted user engagement and reduced load times.`}
         />{" "}
         <PositionCard
           logo="/img/moringa.jpeg"
           jobTitle="Software Developer & Instructor"
           company="Moringa School"
-          duration="2022 - Present"
-          description="ries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lor"
+          duration="Feb 2022 - July 2022"
+          description="Mentored a cohort of 100 aspiring software developers, creating personalized learning plans based on best practices and principles which resulted in 80% retention rate for my class ,improved student satisfaction and resulted in a 50% increase in project delivery for the students assesment
+"
         />{" "}
         <PositionCard
           logo="/img/touch.jpeg"
           jobTitle=" Frontend Software Developer"
           company="Touch Inspiration Ltd"
-          duration="2022 - Present"
-          description="ries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lor"
+          duration="July 2021 - Jan 2022"
+          description="Specialized in crafting bespoke enterprise applications using cutting-edge technologies like React with Next.js, TypeScript, and Vue.js. Your role involved translating UI/UX wireframes into responsive, interactive components and enhancing existing websites, focusing on improved performance and user experience through the use of Material UI, Tailwind, and GraphQL."
         />
       </div>
     </motion.section>
