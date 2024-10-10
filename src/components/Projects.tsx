@@ -55,6 +55,21 @@ let projectsList = [
     ],
   },
   {
+    projectLink: "https://github.com/MugeraH/cool_things",
+    projectName: "Randomthings",
+    description: "Random components implementing various fuctionalities",
+
+    deployed: true,
+    deployedLink:
+      "https://cool-things-xw3z.vercel.app/?vercelToolbarCode=-Xj9KwrjZb5ry9U",
+    languageDetails: [
+      {
+        image: "/img/react.png",
+        name: "react",
+      },
+    ],
+  },
+  {
     projectLink: "https://github.com/MugeraH/Weather-app",
     projectName: "Weatherhero",
     description:
@@ -90,10 +105,10 @@ const ProjectCard = ({
   }[];
 }) => {
   return (
-    <div className="flex flex-col gap-3 bg-gray-950 p-2 md:p-5 rounded">
-      <div className="flex justify-between items-center">
+    <div className="flex flex-col gap-3 rounded bg-gray-950 p-2 md:p-5">
+      <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="h-5 w-5 overflow-hidden ">
+          <div className="h-5 w-5 overflow-hidden">
             <Image
               src="/img/repoicon.png"
               width={16}
@@ -103,7 +118,7 @@ const ProjectCard = ({
             />
           </div>{" "}
           <Link href={projectLink} target="_blank" rel="noopener">
-            <span className="cursor-pointer text-sm font-semibold text-blue-200">
+            <span className="cursor-pointer text-sm font-semibold text-[#4689E4]">
               {projectName}
             </span>
           </Link>
@@ -115,21 +130,21 @@ const ProjectCard = ({
         )}
       </div>
 
-      <p className="text-xs h-10 ">{description}</p>
+      <p className="h-10 text-xs">{description}</p>
 
-      <div className="flex items-center  gap-4 ">
+      <div className="flex items-center gap-4">
         {languageDetails.map((details, index) => (
-          <div className="flex items-center  gap-1" key={index}>
-            <div className=" w-5 overflow-hidden ">
+          <div className="flex items-center gap-1" key={index}>
+            <div className="w-4 overflow-hidden">
               <Image
                 src={details.image}
-                width={16}
+                width={14}
                 height={7}
                 alt={details.name}
                 className=" "
               />
             </div>{" "}
-            <span className="text-xs">{details.name}</span>
+            <span className="text-[10px]">{details.name}</span>
           </div>
         ))}
       </div>
@@ -145,13 +160,13 @@ function Projects({}: Props) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="border-b-[0.2px] border-opacity-30 rounded border-gray-500 py-7 mt-10"
+      className="mt-10 rounded border-b-[0.2px] border-gray-500 border-opacity-30 py-7"
     >
-      <h2 className="text-sm text-semibold"> Repositories</h2>
+      <h2 className="text-semibold text-sm"> Repositories</h2>
 
-      <div className=" mt-4 grid   md:grid-cols-2 gap-4 ">
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
         {projectsList.map((project) => (
-          <Spotlight key={project.projectName} className="w-full ">
+          <Spotlight key={project.projectName} className="w-full">
             {/* Card #1 */}
             <SpotlightCard>
               <ProjectCard
@@ -166,7 +181,7 @@ function Projects({}: Props) {
           </Spotlight>
         ))}
 
-        <div className="cursor-pointer text-blue-200 text-sm flex justify-start items-end">
+        <div className="flex cursor-pointer items-end justify-start text-sm text-blue-200">
           <Link
             href="https://github.com/MugeraH?tab=repositories"
             target="_blank"

@@ -14,15 +14,9 @@ import Tabs from "@/components/tabs";
 export default function Home() {
   let [activeTab, setActiveTab] = React.useState("stack");
   return (
-    <div
-      className="h-full  min-h-screen  text-white
-    
-    bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(44,44,198,0.3),rgba(255,255,255,0))]
-    
-    "
-    >
+    <div className="h-full min-h-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(44,44,198,0.3),rgba(255,255,255,0))] text-white">
       <Container>
-        <AnimatePresence>
+        <AnimatePresence initial={false}>
           <Intro />
           <About />
 
@@ -34,20 +28,18 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className=" "
           >
-            <div className="mt-10  mx-1 flex justify-center">
-              <div className="flex justify-between space-x-1  w-full">
+            <div className="mx-1 mt-10 flex justify-center">
+              <div className="flex w-full justify-between space-x-1">
                 <button
                   onClick={() => setActiveTab("stack")}
                   className={`${
                     activeTab === "stack" ? "" : "hover:text-white/50"
-                  } relative 
-            px-3 py-1.5 text-sm font-medium text-white outline-2 transition outline-sky-400 focus-visible:outline
-            `}
+                  } relative px-3 py-1.5 text-sm font-medium text-white outline-2 outline-sky-400 transition focus-visible:outline`}
                 >
                   {activeTab === "stack" && (
                     <motion.div
                       layoutId="active-pill"
-                      className="absolute  bg-white inset-0"
+                      className="absolute inset-0 bg-white"
                       style={{
                         borderRadius: 2,
                       }}
@@ -63,14 +55,12 @@ export default function Home() {
                   onClick={() => setActiveTab("positions")}
                   className={`${
                     activeTab === "positions" ? "" : "hover:text-white/50"
-                  } relative 
-            px-3 py-1.5 text-sm font-medium text-white outline-2 transition outline-sky-400 focus-visible:outline
-            `}
+                  } relative px-3 py-1.5 text-sm font-medium text-white outline-2 outline-sky-400 transition focus-visible:outline`}
                 >
                   {activeTab === "positions" && (
                     <motion.div
                       layoutId="active-pill"
-                      className="absolute  bg-white inset-0"
+                      className="absolute inset-0 bg-white"
                       style={{
                         borderRadius: 2,
                       }}
@@ -87,14 +77,12 @@ export default function Home() {
                   onClick={() => setActiveTab("guestbook")}
                   className={`${
                     activeTab === "guestbook" ? "" : "hover:text-white/50"
-                  } relative 
-            px-3 py-1.5 text-sm font-medium text-white outline-2 transition outline-sky-400 focus-visible:outline
-            `}
+                  } relative px-3 py-1.5 text-sm font-medium text-white outline-2 outline-sky-400 transition focus-visible:outline`}
                 >
                   {activeTab === "guestbook" && (
                     <motion.div
                       layoutId="active-pill"
-                      className="absolute  bg-white inset-0"
+                      className="absolute inset-0 bg-white"
                       style={{
                         borderRadius: 2,
                       }}

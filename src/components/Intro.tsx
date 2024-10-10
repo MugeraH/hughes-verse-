@@ -3,6 +3,7 @@ import { Github, Linkedin, Youtube, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
 function Intro() {
   return (
     <motion.section
@@ -11,9 +12,9 @@ function Intro() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="border-b-[0.2px] border-opacity-30 rounded border-gray-500  w-full pb-10 gap-10 "
+      className="w-full gap-10 rounded border-b-[0.2px] border-gray-500 border-opacity-30 pb-10"
     >
-      <div className="flex flex-col gap-6 md:flex-row justify-between w-full md:items-center">
+      <div className="flex w-full flex-col justify-between gap-6 md:flex-row md:items-center">
         <div className="flex items-center gap-4">
           {/* <span className="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full animate-buttonheartbeat hover:cursor-pointer">
             <Image
@@ -76,8 +77,8 @@ function Intro() {
           <div className="group relative">
             {/* <div className="transistion rounded-full absolute -inset-0  bg-blue-300 opacity-75 blur duration-1000 animate-pulse"></div> */}
 
-            <div className="bg- tems-center relative flex  rounded-full bg-black  leading-none">
-              <span className="flex items-center ">
+            <div className="bg- tems-center relative flex rounded-full bg-black leading-none">
+              <span className="flex items-center">
                 <Image
                   src="/img/me.jpg"
                   width={70}
@@ -92,7 +93,7 @@ function Intro() {
 
           <div>
             <h3 className="text-1xl font-bold">Hughes Mugera</h3>
-            <div className="flex items-center py-2 gap-2 ">
+            <div className="flex items-center gap-2 py-2">
               <span className="text-sm">Full Stack Engineer & Baker</span>
               <MapPin size={16} />
               <p className="text-sm font-semibold">Nairobi, Kenya</p>
@@ -126,7 +127,7 @@ function Intro() {
         </div>
       </div>
 
-      <p className=" mt-6 md:ml-2 text-xs font-medium ">
+      <p className="mt-6 text-xs font-medium md:ml-2">
         Reach me @ mugerahughes@gmail.com
       </p>
     </motion.section>
