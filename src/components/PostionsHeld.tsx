@@ -18,8 +18,8 @@ const PositionCard = ({
   description: string;
 }) => {
   return (
-    <div className="grid grid-cols-[90px,_1fr] gap-3 items-start">
-      <div className="flex h-[70px] w-[70px] hover:animate-pulse rounded-sm overflow-hidden">
+    <div className="grid grid-cols-[90px,_1fr] items-start gap-3">
+      <div className="flex h-[70px] w-[70px] overflow-hidden rounded-sm hover:animate-pulse">
         <Image
           src={logo}
           width={70}
@@ -30,8 +30,8 @@ const PositionCard = ({
         />
       </div>{" "}
       <div className="flex flex-col gap-2">
-        <p className="block font-bold text-1xl">{jobTitle}</p>
-        <span className=" text-sm font-semibold flex items-center ">
+        <p className="text-1xl block font-bold">{jobTitle}</p>
+        <span className="flex items-center text-sm font-semibold">
           {company} <Dot /> {duration}
         </span>
         <p className="block text-sm">{description}</p>
@@ -59,7 +59,8 @@ function PostionsHeld({}: Props) {
           jobTitle="Senior Software Developer(Frontend)"
           company="Kenya Airways"
           duration="July 2022 - Present"
-          description={`Spearheaded a significant architectural shift from monolithic to decoupled systems  for internal appplications, dramatically improving deployment times and development efficiency. I led an Agile team of five developers, fostering cross-functional collaboration and delivering high-performance web applications that substantially boosted user engagement and reduced load times.`}
+          description={`
+            Experienced full stack developer specializing in frontend software development. Proficient in ReactJS(NextJS) for building intuitive client-side applications, with strong skills in C# and ASP.NET for backend integration.Spearheaded a significant architectural shift from monolithic to decoupled systems  for internal appplications, dramatically improving deployment times and development efficiency.Led an Agile team of five developers, fostering cross-functional collaboration and delivering high-performance web applications that substantially boosted user engagement and reduced load times.`}
         />{" "}
         <PositionCard
           logo="/img/moringa.jpeg"
