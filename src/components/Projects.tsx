@@ -3,11 +3,30 @@ import React from "react";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
-import { details } from "framer-motion/client";
+// import { details } from "framer-motion/client";
 import Spotlight, { SpotlightCard } from "./utils/Spotlight";
 type Props = {};
 
 let projectsList = [
+  {
+    projectLink: "https://github.com/MugeraH/ask-away",
+    projectName: "Askaway",
+    description:
+      "An ai prompt chatbot with ability to propmt multiple ai modles",
+
+    deployed: true,
+    deployedLink: "https://ask-away-9zeoxm6ti-mugerahs-projects.vercel.app/",
+    languageDetails: [
+      {
+        image: "/img/react.png",
+        name: "react",
+      },
+      {
+        image: "/img/tailwind.png",
+        name: "tailwind",
+      },
+    ],
+  },
   {
     projectLink: "https://github.com/MugeraH/google-notes-clone",
     projectName: "Google-notes-remake",
