@@ -25,11 +25,7 @@ function About({}: Props) {
         >
           @KenyaAirways
         </Link>{" "}
-        {`with 5+ years experience
-        in web and applications development, I've honed my skills as a Fullstack
-        Software Engineer and I specialize in creating visually appealing,
-        functional interfaces that easily integrate with backend applications,
-        following best practices and ensuring optimal application performance. `}
+        {` with 5+ years' experience in web and applications development, I've honed my skills as a Fullstack Software Engineer, specializing in creating visually appealing, functional interfaces that seamlessly integrate with backend applications, following best practices and ensuring optimal application performance `}
       </p>
     </motion.section>
   );
