@@ -15,7 +15,7 @@ let projectsList = [
       "An ai prompt chatbot with ability to prompt multiple ai models",
 
     deployed: true,
-    deployedLink: "https://ask-away-9zeoxm6ti-mugerahs-projects.vercel.app/",
+    deployedLink: "https://ask-away-gpt.vercel.app/",
     languageDetails: [
       {
         image: "/img/react.png",
